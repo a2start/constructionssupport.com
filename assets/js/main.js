@@ -11,6 +11,64 @@ document.addEventListener("DOMContentLoaded", function () {
     updateStickyHeader();
   }
 
+  var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var wheelTarget = window.scrollY;
+  var wheelFrame = null;
+
+  function hasScrollableParent(target, deltaY) {
+    var element = target.nodeType === 1 ? target : target.parentElement;
+
+    while (element && element !== document.body) {
+      var style = window.getComputedStyle(element);
+      var canScrollVertically = /(auto|scroll|overlay)/.test(style.overflowY) &&
+        element.scrollHeight > element.clientHeight;
+
+      if (canScrollVertically) {
+        var canScrollDown = element.scrollTop + element.clientHeight < element.scrollHeight;
+        var canScrollUp = element.scrollTop > 0;
+        if ((deltaY > 0 && canScrollDown) || (deltaY < 0 && canScrollUp)) return true;
+      }
+      element = element.parentElement;
+    }
+    return false;
+  }
+
+  function smoothWheelScroll(event) {
+    if (reducedMotion.matches || event.ctrlKey || event.deltaY === 0 ||
+        event.target.closest("input, textarea, select, [contenteditable='true']") ||
+        hasScrollableParent(event.target, event.deltaY)) return;
+
+    var delta = event.deltaY;
+    if (event.deltaMode === 1) delta *= 16;
+    else if (event.deltaMode === 2) delta *= window.innerHeight;
+
+    var doc = document.documentElement;
+    var maxScroll = Math.max(doc.scrollHeight, document.body.scrollHeight) - window.innerHeight;
+    var currentTarget = wheelFrame === null ? window.scrollY : wheelTarget;
+    var nextTarget = Math.max(0, Math.min(maxScroll, currentTarget + delta));
+    if (nextTarget === currentTarget) return;
+
+    event.preventDefault();
+    wheelTarget = nextTarget;
+
+    if (wheelFrame === null) {
+      function animateWheelScroll() {
+        var distance = wheelTarget - window.scrollY;
+        if (Math.abs(distance) < 1) {
+          window.scrollTo(0, wheelTarget);
+          wheelFrame = null;
+          return;
+        }
+
+        window.scrollTo(0, window.scrollY + distance * 0.2);
+        wheelFrame = window.requestAnimationFrame(animateWheelScroll);
+      }
+      wheelFrame = window.requestAnimationFrame(animateWheelScroll);
+    }
+  }
+
+  document.addEventListener("wheel", smoothWheelScroll, { passive: false });
+
   if (navToggle && header) {
     navToggle.addEventListener("click", function () {
       header.classList.toggle("open");
