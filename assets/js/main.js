@@ -2,6 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector(".site-header");
   var navToggle = document.querySelector(".nav-toggle");
 
+  if (header) {
+    var headerTop = header.getBoundingClientRect().top + window.scrollY;
+    var updateStickyHeader = function () {
+      header.classList.toggle("is-scrolled", window.scrollY > headerTop);
+    };
+    window.addEventListener("scroll", updateStickyHeader, { passive: true });
+    updateStickyHeader();
+  }
+
   if (navToggle && header) {
     navToggle.addEventListener("click", function () {
       header.classList.toggle("open");
@@ -48,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
       else backToTop.classList.remove("show");
     });
     backToTop.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      var behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+      window.scrollTo({ top: 0, behavior: behavior });
     });
   }
 

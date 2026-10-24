@@ -255,7 +255,8 @@ var CITB_CENTRES = [
           var lng = data.result.longitude;
           var label = data.result.postcode;
           renderResults(nearestCentres(lat, lng, 8), label);
-          document.querySelector("#centre-results-wrap").scrollIntoView({ behavior: "smooth", block: "start" });
+          var behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+          document.querySelector("#centre-results-wrap").scrollIntoView({ behavior: behavior, block: "start" });
         })
         .catch(function () {
           setLoading(false);
@@ -271,7 +272,8 @@ var CITB_CENTRES = [
           function (pos) {
             setLoading(false);
             renderResults(nearestCentres(pos.coords.latitude, pos.coords.longitude, 8), "your current location");
-            document.querySelector("#centre-results-wrap").scrollIntoView({ behavior: "smooth", block: "start" });
+            var behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+            document.querySelector("#centre-results-wrap").scrollIntoView({ behavior: behavior, block: "start" });
           },
           function () {
             setLoading(false);
