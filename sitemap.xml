@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.constructionhelps.com/index.html</loc>
+    <loc>https://www.constructionssupport.com/index.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- About -->
   <url>
-    <loc>https://www.constructionhelps.com/about.html</loc>
+    <loc>https://www.constructionssupport.com/about.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -19,7 +19,7 @@
 
   <!-- Contact -->
   <url>
-    <loc>https://www.constructionhelps.com/contact.html</loc>
+    <loc>https://www.constructionssupport.com/contact.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
   <!-- FAQs -->
   <url>
-    <loc>https://www.constructionhelps.com/faqs.html</loc>
+    <loc>https://www.constructionssupport.com/faqs.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -35,7 +35,7 @@
 
   <!-- CITB Test -->
   <url>
-    <loc>https://www.constructionhelps.com/citb-test.html</loc>
+    <loc>https://www.constructionssupport.com/citb-test.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -43,7 +43,7 @@
 
   <!-- CSCS Cards Overview -->
   <url>
-    <loc>https://www.constructionhelps.com/cards.html</loc>
+    <loc>https://www.constructionssupport.com/cards.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -51,7 +51,7 @@
 
   <!-- CSCS Green Card -->
   <url>
-    <loc>https://www.constructionhelps.com/green-card.html</loc>
+    <loc>https://www.constructionssupport.com/green-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -59,7 +59,7 @@
 
   <!-- CSCS Blue Card -->
   <url>
-    <loc>https://www.constructionhelps.com/blue-card.html</loc>
+    <loc>https://www.constructionssupport.com/blue-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -67,7 +67,7 @@
 
   <!-- CSCS Gold Card -->
   <url>
-    <loc>https://www.constructionhelps.com/gold-card.html</loc>
+    <loc>https://www.constructionssupport.com/gold-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -75,7 +75,7 @@
 
   <!-- CSCS Red Card -->
   <url>
-    <loc>https://www.constructionhelps.com/red-card.html</loc>
+    <loc>https://www.constructionssupport.com/red-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -83,7 +83,7 @@
 
   <!-- CSCS White Card -->
   <url>
-    <loc>https://www.constructionhelps.com/white-card.html</loc>
+    <loc>https://www.constructionssupport.com/white-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -91,7 +91,7 @@
 
   <!-- CSCS Black Card -->
   <url>
-    <loc>https://www.constructionhelps.com/black-card.html</loc>
+    <loc>https://www.constructionssupport.com/black-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -99,7 +99,7 @@
 
   <!-- Skill Card -->
   <url>
-    <loc>https://www.constructionhelps.com/skill-card.html</loc>
+    <loc>https://www.constructionssupport.com/skill-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -107,7 +107,7 @@
 
   <!-- JIB Card -->
   <url>
-    <loc>https://www.constructionhelps.com/jib-card.html</loc>
+    <loc>https://www.constructionssupport.com/jib-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -115,7 +115,7 @@
 
   <!-- ECS Card -->
   <url>
-    <loc>https://www.constructionhelps.com/ecs-card.html</loc>
+    <loc>https://www.constructionssupport.com/ecs-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -123,7 +123,7 @@
 
   <!-- CPCS Card -->
   <url>
-    <loc>https://www.constructionhelps.com/cpcs-card.html</loc>
+    <loc>https://www.constructionssupport.com/cpcs-card.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -131,7 +131,7 @@
 
   <!-- E-Learning -->
   <url>
-    <loc>https://www.constructionhelps.com/e-learning.html</loc>
+    <loc>https://www.constructionssupport.com/e-learning.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -139,7 +139,7 @@
 
   <!-- Green Card Online Course -->
   <url>
-    <loc>https://www.constructionhelps.com/green-card-online-course.html</loc>
+    <loc>https://www.constructionssupport.com/green-card-online-course.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -147,7 +147,7 @@
 
   <!-- CITB Mock Tests -->
   <url>
-    <loc>https://www.constructionhelps.com/citb-mock-tests.html</loc>
+    <loc>https://www.constructionssupport.com/citb-mock-tests.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -155,7 +155,7 @@
 
   <!-- CITB Operatives Mock Test -->
   <url>
-    <loc>https://www.constructionhelps.com/citb-operatives-mock-test.html</loc>
+    <loc>https://www.constructionssupport.com/citb-operatives-mock-test.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -163,7 +163,7 @@
 
   <!-- CITB Supervisors Mock Test -->
   <url>
-    <loc>https://www.constructionhelps.com/citb-supervisors-mock-test.html</loc>
+    <loc>https://www.constructionssupport.com/citb-supervisors-mock-test.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -171,7 +171,7 @@
 
   <!-- CITB Working at Heights Mock Test -->
   <url>
-    <loc>https://www.constructionhelps.com/citb-working-at-heights-mock-test.html</loc>
+    <loc>https://www.constructionssupport.com/citb-working-at-heights-mock-test.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -179,7 +179,7 @@
 
   <!-- CITB Fire Extinguishers Mock Test -->
   <url>
-    <loc>https://www.constructionhelps.com/citb-fire-extinguishers-mock-test.html</loc>
+    <loc>https://www.constructionssupport.com/citb-fire-extinguishers-mock-test.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -187,7 +187,7 @@
 
   <!-- CITB Safety Signs Test -->
   <url>
-    <loc>https://www.constructionhelps.com/citb-safety-signs-test.html</loc>
+    <loc>https://www.constructionssupport.com/citb-safety-signs-test.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -195,7 +195,7 @@
 
   <!-- CITB Revision -->
   <url>
-    <loc>https://www.constructionhelps.com/citb-revision.html</loc>
+    <loc>https://www.constructionssupport.com/citb-revision.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -203,7 +203,7 @@
 
   <!-- Which CITB Test -->
   <url>
-    <loc>https://www.constructionhelps.com/which-citb-test.html</loc>
+    <loc>https://www.constructionssupport.com/which-citb-test.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -211,7 +211,7 @@
 
   <!-- Test Centres -->
   <url>
-    <loc>https://www.constructionhelps.com/test-centres.html</loc>
+    <loc>https://www.constructionssupport.com/test-centres.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -219,7 +219,7 @@
 
   <!-- Group Test Booking -->
   <url>
-    <loc>https://www.constructionhelps.com/group-test-booking.html</loc>
+    <loc>https://www.constructionssupport.com/group-test-booking.html</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -9,7 +9,7 @@ SITE = {
     "phone1_tel": "02034008738",
     "phone2": "0333 303 1186",
     "phone2_tel": "03333031186",
-    "email": "Info@constructionhelps.com",
+    "email": "Info@constructionssupport.com",
     "address": "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ",
 }
 
@@ -2011,7 +2011,7 @@ def build_terms():
 
         <h2>12. Contact Us</h2>
         <p>If you have any questions about these Terms and Conditions, please contact us at
-        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a> or call 0203 400 8738.</p>
+        <a href="mailto:Info@constructionssupport.com">Info@constructionssupport.com</a> or call 0203 400 8738.</p>
     """
     body = legal_page_body(
         "terms.html", "Terms &amp; Conditions", "Legal",
@@ -2085,7 +2085,7 @@ def build_privacy():
 
         <h2>11. Contact Us</h2>
         <p>For any questions about this Privacy Policy or your personal information, contact us at
-        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a>, by phone on 0203 400 8738, or
+        <a href="mailto:Info@constructionssupport.com">Info@constructionssupport.com</a>, by phone on 0203 400 8738, or
         by post at 71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ.</p>
     """
     body = legal_page_body(
@@ -2141,7 +2141,7 @@ def build_disclaimer():
 
         <h2>8. Contact Us</h2>
         <p>If you have questions about this Disclaimer, contact us at
-        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a> or call 0203 400 8738.</p>
+        <a href="mailto:Info@constructionssupport.com">Info@constructionssupport.com</a> or call 0203 400 8738.</p>
     """
     body = legal_page_body(
         "disclaimer.html", "Disclaimer", "Legal",
@@ -2173,7 +2173,7 @@ def build_refund_policy():
           partial refund, less any non-recoverable third-party fees</li>
           <li>Cancellations made within 48 hours of your scheduled test may not be eligible for a refund, as test
           centre slots are reserved on your behalf</li>
-          <li>To cancel a booking, contact us as soon as possible on 0203 400 8738 or Info@constructionhelps.com</li>
+          <li>To cancel a booking, contact us as soon as possible on 0203 400 8738 or Info@constructionssupport.com</li>
         </ul>
 
         <h2>4. Non-Refundable Circumstances</h2>
@@ -2195,7 +2195,7 @@ def build_refund_policy():
 
         <h2>7. Contact Us</h2>
         <p>For any questions about cancellations or refunds, call us on 0203 400 8738 or email
-        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a>.</p>
+        <a href="mailto:Info@constructionssupport.com">Info@constructionssupport.com</a>.</p>
     """
     body = legal_page_body(
         "refund-policy.html", "Refund Policy", "Legal",

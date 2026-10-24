@@ -8,4 +8,4 @@ Disallow: /disclaimer.html
 Disallow: /refund-policy.html
 
 # Sitemap location
-Sitemap: https://www.constructionhelps.com/sitemap.xml
+Sitemap: https://www.constructionssupport.com/sitemap.xml

@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var body = encodeURIComponent(
         "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nTopic: " + topic + "\n\n" + message
       );
-      window.location.href = "mailto:Info@constructionhelps.com?subject=" + subject + "&body=" + body;
+      window.location.href = "mailto:Info@constructionssupport.com?subject=" + subject + "&body=" + body;
     });
   }
 });
