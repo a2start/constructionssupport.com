@@ -34,9 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function smoothWheelScroll(event) {
+    var target = event.target.nodeType === 1 ? event.target : event.target.parentElement;
     if (reducedMotion.matches || event.ctrlKey || event.deltaY === 0 ||
-        event.target.closest("input, textarea, select, [contenteditable='true']") ||
-        hasScrollableParent(event.target, event.deltaY)) return;
+        (target && target.closest("input, textarea, select, [contenteditable='true']")) ||
+        hasScrollableParent(target, event.deltaY)) return;
 
     var delta = event.deltaY;
     if (event.deltaMode === 1) delta *= 16;
