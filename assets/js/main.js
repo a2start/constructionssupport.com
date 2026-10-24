@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var delta = event.deltaY;
     if (event.deltaMode === 1) delta *= 16;
     else if (event.deltaMode === 2) delta *= window.innerHeight;
-    delta *= 1.35;
+    delta *= 1.6;
 
     var doc = document.documentElement;
     var maxScroll = Math.max(doc.scrollHeight, document.body.scrollHeight) - window.innerHeight;
@@ -57,12 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
       function animateWheelScroll() {
         var distance = wheelTarget - window.scrollY;
         if (Math.abs(distance) < 1.5) {
-          window.scrollTo(0, wheelTarget);
+          window.scrollTo({ top: wheelTarget, behavior: "instant" });
           wheelFrame = null;
           return;
         }
 
-        window.scrollTo(0, window.scrollY + distance * 0.35);
+        window.scrollTo({ top: window.scrollY + distance * 0.45, behavior: "instant" });
         wheelFrame = window.requestAnimationFrame(animateWheelScroll);
       }
       wheelFrame = window.requestAnimationFrame(animateWheelScroll);
