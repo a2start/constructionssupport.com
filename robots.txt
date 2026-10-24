@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow legal/policy boilerplate pages from indexing
+Disallow: /privacy.html
+Disallow: /terms.html
+Disallow: /disclaimer.html
+Disallow: /refund-policy.html
+
+# Sitemap location
+Sitemap: https://www.constructionhelps.com/sitemap.xml
