@@ -7,8 +7,6 @@ SITE = {
     "name": "Construction Helps",
     "phone1": "0203 400 8738",
     "phone1_tel": "02034008738",
-    "phone2": "0333 303 1186",
-    "phone2_tel": "03333031186",
     "email": "Info@constructionssupport.com",
     "address": "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ",
 }
@@ -298,7 +296,6 @@ def topbar_html():
     <div class="container">
       <div class="topbar__contacts">
         <a href="tel:{phone1_tel}" class="topbar__primary">📞 {phone1}</a>
-        <a href="tel:{phone2_tel}" class="topbar__secondary">📞 {phone2}</a>
         <a href="mailto:{email}" class="topbar__secondary">✉ {email}</a>
         <span class="topbar__secondary">📍 Covent Garden, London</span>
       </div>
@@ -367,7 +364,6 @@ def footer_html():
         <ul class="footer-contact">
           <li><span class="ico">📍</span><span>{address}</span></li>
           <li><span class="ico">📞</span><a href="tel:{phone1_tel}">{phone1}</a></li>
-          <li><span class="ico">📞</span><a href="tel:{phone2_tel}">{phone2}</a></li>
           <li><span class="ico">✉</span><a href="mailto:{email}">{email}</a></li>
         </ul>
       </div>
@@ -393,7 +389,6 @@ def footer_html():
         site=SITE["name"],
         address=SITE["address"],
         phone1=SITE["phone1"], phone1_tel=SITE["phone1_tel"],
-        phone2=SITE["phone2"], phone2_tel=SITE["phone2_tel"],
         email=SITE["email"],
         card_links="".join('<li><a href="{slug}.html">{name}</a></li>'.format(slug=c["slug"], name=c["name"]) for c in CARDS),
     )
@@ -403,11 +398,11 @@ def page(title, description, body, extra_head=""):
 <html lang="en-GB">
 <head>
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+  new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MNDJT59Q');</script>
+  }})(window,document,'script','dataLayer','GTM-MNDJT59Q');</script>
   <!-- End Google Tag Manager -->
   {head}{extra_head}
 </head>
@@ -1860,7 +1855,7 @@ def build_contact():
           <div class="contact-card">
             <div class="ico">📞</div>
             <div><h4>Phone</h4>
-              <p><a href="tel:{phone1_tel}">{phone1}</a><br><a href="tel:{phone2_tel}">{phone2}</a></p>
+              <p><a href="tel:{phone1_tel}">{phone1}</a></p>
             </div>
           </div>
           <div class="contact-card">
