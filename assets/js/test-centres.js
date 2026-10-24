@@ -259,7 +259,7 @@ var CITB_CENTRES = [
         })
         .catch(function () {
           setLoading(false);
-          showError("We couldn't find that postcode. Please double check it, or call us on 0800 002 5614 and we'll find your nearest centre for you.");
+          showError("We couldn't find that postcode. Please double check it, or call us on 0203 400 8738 and we'll find your nearest centre for you.");
         });
     });
 

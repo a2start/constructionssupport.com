@@ -5,8 +5,8 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SITE = {
     "name": "Construction Helps",
-    "phone1": "0800 002 5614",
-    "phone1_tel": "08000025614",
+    "phone1": "0203 400 8738",
+    "phone1_tel": "02034008738",
     "phone2": "0333 303 1186",
     "phone2_tel": "03333031186",
     "email": "Info@constructionhelps.com",
@@ -443,7 +443,7 @@ def other_cards_strip(exclude_slug=None, title="Explore The Other Cards"):
     </div>
   </div>""".format(title=title, tiles=tiles)
 
-def cta_band(heading="Ready To Get Your Card Sorted?", text="Just call us on 0800 002 5614 and our team will take care of the rest."):
+def cta_band(heading="Ready To Get Your Card Sorted?", text="Just call us on 0203 400 8738 and our team will take care of the rest."):
     return """<div class="container">
     <div class="cta-band">
       <div>
@@ -499,7 +499,7 @@ def build_home():
     steps = [
         ("Choose Your Card", "Tell us your trade, qualifications and experience — we'll confirm which CSCS, Skill or JIB card fits."),
         ("Book &amp; Pass Your Test", "We book your CITB Health, Safety &amp; Environment test at a nearby approved centre."),
-        ("Call Us &amp; Relax", "Just call us on 0800 002 5614 and our team will take care of the rest — application, updates and delivery."),
+        ("Call Us &amp; Relax", "Just call us on 0203 400 8738 and our team will take care of the rest — application, updates and delivery."),
     ]
     steps_html = "".join("""<div class="step"><h3>{t}</h3><p>{d}</p></div>""".format(t=t, d=d) for t, d in steps)
 
@@ -808,7 +808,7 @@ def build_card_page(c):
         <div class="steps" style="grid-template-columns:1fr; gap:18px;">
           <div class="step"><h3>Book Your CITB Test</h3><p>We'll book your Health, Safety &amp; Environment test at your nearest approved centre.</p></div>
           <div class="step"><h3>Pass Your Test</h3><p>Sit the multiple-choice touch-screen test &mdash; 45 out of 50 correct is a pass.</p></div>
-          <div class="step"><h3>Call Us &amp; Relax</h3><p>Just call us on 0800 002 5614 and we'll take care of the rest of your {name} application.</p></div>
+          <div class="step"><h3>Call Us &amp; Relax</h3><p>Just call us on 0203 400 8738 and we'll take care of the rest of your {name} application.</p></div>
         </div>
       </div>
     </div>
@@ -818,7 +818,7 @@ def build_card_page(c):
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Apply For Your {name}?".format(name=c["name"]),
-        text="Just call us on 0800 002 5614 and we'll take care of the rest of your {name} application.".format(name=c["name"]),
+        text="Just call us on 0203 400 8738 and we'll take care of the rest of your {name} application.".format(name=c["name"]),
     ) + """</section>
 """
     body = body.format(
@@ -886,14 +886,14 @@ def build_skill_card():
       <div class="steps">
         <div class="step"><h3>Confirm Eligibility</h3><p>We check your trade qualification against the correct Skill Card category.</p></div>
         <div class="step"><h3>Book Your Test</h3><p>We arrange your CITB Health, Safety &amp; Environment test at a nearby centre.</p></div>
-        <div class="step"><h3>Call Us &amp; Relax</h3><p>Just call us on 0800 002 5614 and we'll take care of the rest — paperwork, tracking and delivery.</p></div>
+        <div class="step"><h3>Call Us &amp; Relax</h3><p>Just call us on 0203 400 8738 and we'll take care of the rest — paperwork, tracking and delivery.</p></div>
       </div>
     </div>
   </section>
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Apply For Your Skill Card?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     return page(
@@ -956,14 +956,14 @@ def build_jib_card():
       <div class="steps">
         <div class="step"><h3>Confirm Your Grade</h3><p>We match your qualifications and experience to the correct JIB card category.</p></div>
         <div class="step"><h3>Book Any Required Test</h3><p>We arrange any health &amp; safety or trade assessment your grade requires.</p></div>
-        <div class="step"><h3>Call Us &amp; Relax</h3><p>Just call us on 0800 002 5614 and we'll take care of the rest of your JIB card application.</p></div>
+        <div class="step"><h3>Call Us &amp; Relax</h3><p>Just call us on 0203 400 8738 and we'll take care of the rest of your JIB card application.</p></div>
       </div>
     </div>
   </section>
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Apply For Your JIB Card?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     return page(
@@ -1052,15 +1052,15 @@ def build_ecs_card():
         <div class="step"><h3>Pass The Health &amp; Safety Assessment</h3><p>Complete the ECS Health, Safety &amp; Environmental test.</p></div>
       </div>
       <div class="text-center" style="margin-top:28px;">
-        <a href="tel:08000025614" class="btn btn-primary">Call Us &amp; Relax</a>
-        <p style="margin-top:14px; color:var(--gray-500); font-size:14.5px;">Prefer we handle it for you? Just call us on 0800 002 5614 and we'll take care of the rest.</p>
+        <a href="tel:02034008738" class="btn btn-primary">Call Us &amp; Relax</a>
+        <p style="margin-top:14px; color:var(--gray-500); font-size:14.5px;">Prefer we handle it for you? Just call us on 0203 400 8738 and we'll take care of the rest.</p>
       </div>
     </div>
   </section>
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Apply For Your ECS Card?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     body = body.format(why_html=why_html, subtypes_html=subtypes_html)
@@ -1167,7 +1167,7 @@ def build_cpcs_card():
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Apply For Your CPCS Card?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     body = body.format(blocks=blocks, phone1_tel=SITE["phone1_tel"], phone1=SITE["phone1"])
@@ -1226,8 +1226,8 @@ def build_citb_test():
         <div class="step"><h3>Receive Confirmation</h3><p>Get an email confirming your test date, time and location, ready to attend.</p></div>
       </div>
       <div class="text-center" style="margin-top:36px;">
-        <a href="tel:08000025614" class="btn btn-primary">Call Us &amp; Relax</a>
-        <p style="margin-top:14px; color:var(--gray-500); font-size:14.5px;">Prefer not to fill in a form? Just call us on 0800 002 5614 and we'll take care of the rest.</p>
+        <a href="tel:02034008738" class="btn btn-primary">Call Us &amp; Relax</a>
+        <p style="margin-top:14px; color:var(--gray-500); font-size:14.5px;">Prefer not to fill in a form? Just call us on 0203 400 8738 and we'll take care of the rest.</p>
       </div>
     </div>
   </section>
@@ -1267,7 +1267,7 @@ def build_citb_test():
         </div>
         <div class="faq-item">
           <button class="faq-q"><span>How much does the CITB test cost?</span><span class="plus">+</span></button>
-          <div class="faq-a"><p>Pricing includes the exam fee, booking fee and VAT. Just call us on 0800 002 5614 and our team will take care of the rest — latest pricing and availability at your chosen centre.</p></div>
+          <div class="faq-a"><p>Pricing includes the exam fee, booking fee and VAT. Just call us on 0203 400 8738 and our team will take care of the rest — latest pricing and availability at your chosen centre.</p></div>
         </div>
       </div>
     </div>
@@ -1318,7 +1318,7 @@ def build_test_centres():
       <div class="section-head">
         <span class="eyebrow">Browse All Locations</span>
         <h2>150+ Approved Test Centres By Region</h2>
-        <p>Can't find your town, or prefer to book by phone? Just call us on 0800 002 5614 and our team will take care of the rest.</p>
+        <p>Can't find your town, or prefer to book by phone? Just call us on 0203 400 8738 and our team will take care of the rest.</p>
       </div>
       <div id="centre-regions"></div>
     </div>
@@ -1326,7 +1326,7 @@ def build_test_centres():
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Book Your CITB Test?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 
   <script src="assets/js/test-centres.js"></script>
@@ -1379,7 +1379,7 @@ def build_which_test():
       <div class="section-head">
         <span class="eyebrow">Three Test Types</span>
         <h2>Match Your Test To Your Role</h2>
-        <p>Not sure which one applies to you? Just call us on 0800 002 5614 and our team will take care of the rest.</p>
+        <p>Not sure which one applies to you? Just call us on 0203 400 8738 and our team will take care of the rest.</p>
       </div>
       <div class="grid grid-3">{cards_html}</div>
     </div>
@@ -1449,14 +1449,14 @@ def build_group_booking():
       <div class="steps">
         <div class="step"><h3>Send Us Your List</h3><p>Give us the names and preferred test type for each team member.</p></div>
         <div class="step"><h3>We Coordinate Dates</h3><p>We find a test centre and dates that work for the group.</p></div>
-        <div class="step"><h3>Call Us &amp; Relax</h3><p>Just call us on 0800 002 5614 and we'll take care of the rest.</p></div>
+        <div class="step"><h3>Call Us &amp; Relax</h3><p>Just call us on 0203 400 8738 and we'll take care of the rest.</p></div>
       </div>
     </div>
   </section>
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Book For Your Team?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     return page(
@@ -1545,7 +1545,7 @@ def build_mock_tests_hub():
 
   <section class="section--tight">""" + cta_band(
         heading="Ready For The Real Thing?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     body = body.format(cards_html=cards_html)
@@ -1600,7 +1600,7 @@ def build_mock_test_page(m):
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Book Your Real CITB Test?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     body = body.format(audience=m["audience"], topics_html=topics_html, name=m["name"], others_html=others_html)
@@ -1675,7 +1675,7 @@ def build_green_card_course():
       <div class="steps">
         <div class="step"><h3>Enrol Online</h3><p>Sign up for the Health, Safety &amp; Awareness course in a couple of minutes.</p></div>
         <div class="step"><h3>Complete The Course</h3><p>Work through the course online, at your own pace, from any device.</p></div>
-        <div class="step"><h3>Apply For Your Green Card</h3><p>Use your certificate to apply &mdash; or just call us on 0800 002 5614 and we'll take care of the rest.</p></div>
+        <div class="step"><h3>Apply For Your Green Card</h3><p>Use your certificate to apply &mdash; or just call us on 0203 400 8738 and we'll take care of the rest.</p></div>
       </div>
     </div>
   </section>
@@ -1696,7 +1696,7 @@ def build_green_card_course():
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Start Your Green Card Course?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     body = body.format(topics_html=topics_html)
@@ -1762,7 +1762,7 @@ def build_elearning():
 
   <section class="section--tight">""" + cta_band(
         heading="Ready To Start Learning?",
-        text="Not sure which course to pick? Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Not sure which course to pick? Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     body = body.format(course_html=course_html)
@@ -1898,7 +1898,7 @@ def build_contact():
 
   <section class="section--tight">""" + cta_band(
         heading="Prefer To Talk?",
-        text="Just call us on 0800 002 5614 and our team will take care of the rest.",
+        text="Just call us on 0203 400 8738 and our team will take care of the rest.",
     ) + """</section>
 """
     body = body.format(**SITE)
@@ -2000,7 +2000,7 @@ def build_terms():
 
         <h2>12. Contact Us</h2>
         <p>If you have any questions about these Terms and Conditions, please contact us at
-        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a> or call 0800 002 5614.</p>
+        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a> or call 0203 400 8738.</p>
     """
     body = legal_page_body(
         "terms.html", "Terms &amp; Conditions", "Legal",
@@ -2074,7 +2074,7 @@ def build_privacy():
 
         <h2>11. Contact Us</h2>
         <p>For any questions about this Privacy Policy or your personal information, contact us at
-        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a>, by phone on 0800 002 5614, or
+        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a>, by phone on 0203 400 8738, or
         by post at 71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ.</p>
     """
     body = legal_page_body(
@@ -2130,7 +2130,7 @@ def build_disclaimer():
 
         <h2>8. Contact Us</h2>
         <p>If you have questions about this Disclaimer, contact us at
-        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a> or call 0800 002 5614.</p>
+        <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a> or call 0203 400 8738.</p>
     """
     body = legal_page_body(
         "disclaimer.html", "Disclaimer", "Legal",
@@ -2154,7 +2154,7 @@ def build_refund_policy():
 
         <h2>2. Free Rescheduling</h2>
         <p>We offer free rescheduling of your CITB test booking, subject to availability at your chosen test
-        centre. Just call us on 0800 002 5614 and our team will take care of the rest.</p>
+        centre. Just call us on 0203 400 8738 and our team will take care of the rest.</p>
 
         <h2>3. Cancelling Your Booking</h2>
         <ul>
@@ -2162,7 +2162,7 @@ def build_refund_policy():
           partial refund, less any non-recoverable third-party fees</li>
           <li>Cancellations made within 48 hours of your scheduled test may not be eligible for a refund, as test
           centre slots are reserved on your behalf</li>
-          <li>To cancel a booking, contact us as soon as possible on 0800 002 5614 or Info@constructionhelps.com</li>
+          <li>To cancel a booking, contact us as soon as possible on 0203 400 8738 or Info@constructionhelps.com</li>
         </ul>
 
         <h2>4. Non-Refundable Circumstances</h2>
@@ -2183,7 +2183,7 @@ def build_refund_policy():
         provider may take longer to show the funds in your account.</p>
 
         <h2>7. Contact Us</h2>
-        <p>For any questions about cancellations or refunds, call us on 0800 002 5614 or email
+        <p>For any questions about cancellations or refunds, call us on 0203 400 8738 or email
         <a href="mailto:Info@constructionhelps.com">Info@constructionhelps.com</a>.</p>
     """
     body = legal_page_body(
@@ -2203,10 +2203,10 @@ def build_faqs():
         ("General", [
             ("What is Construction Helps?", "Construction Helps is an independent booking agent that helps construction workers book CITB tests, apply for CSCS, Skill, JIB, ECS and CPCS cards, and access online e-learning courses."),
             ("Are you CITB, CSCS, JIB, ECS or CPCS?", "No. We are an independent booking agent and are not affiliated with, endorsed by, or acting on behalf of any of these organisations. See our <a href=\"disclaimer.html\">Disclaimer</a> for more detail."),
-            ("Which card do I need?", "It depends on your trade, qualifications and experience. Visit our <a href=\"cards.html\">CSCS Cards</a> page or just call us on 0800 002 5614 and our team will take care of the rest."),
+            ("Which card do I need?", "It depends on your trade, qualifications and experience. Visit our <a href=\"cards.html\">CSCS Cards</a> page or just call us on 0203 400 8738 and our team will take care of the rest."),
         ]),
         ("Bookings &amp; Payments", [
-            ("How do I book a CITB test?", "Use our <a href=\"citb-test.html\">CITB Test</a> page to book online, or call us on 0800 002 5614 and we'll book it for you over the phone."),
+            ("How do I book a CITB test?", "Use our <a href=\"citb-test.html\">CITB Test</a> page to book online, or call us on 0203 400 8738 and we'll book it for you over the phone."),
             ("Is payment on this site secure?", "Yes. Payments are processed securely online, and we do not store your full card details."),
             ("Can I reschedule or cancel my booking?", "Yes, we offer free rescheduling subject to availability. See our <a href=\"refund-policy.html\">Refund Policy</a> for cancellation terms."),
             ("What if I fail my test?", "You can book a retake through us. A new booking fee will apply for the further attempt."),
@@ -2235,7 +2235,7 @@ def build_faqs():
 
     content = """
         <p class="legal-updated">Answers to the questions we're asked most often. Still stuck? Just call us on
-        0800 002 5614 and our team will take care of the rest.</p>
+        0203 400 8738 and our team will take care of the rest.</p>
         {groups_html}
     """.format(groups_html=groups_html)
 
