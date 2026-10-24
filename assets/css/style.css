@@ -32,8 +32,6 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
-
 html { overflow-x: clip; }
 body {
   margin: 0;
@@ -766,6 +764,5 @@ p { margin: 0 0 1em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
   .site-header.is-scrolled { animation: none; }
 }

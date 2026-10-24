@@ -11,66 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateStickyHeader();
   }
 
-  var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  var wheelTarget = window.scrollY;
-  var wheelFrame = null;
-
-  function hasScrollableParent(target, deltaY) {
-    var element = target.nodeType === 1 ? target : target.parentElement;
-
-    while (element && element !== document.body) {
-      var style = window.getComputedStyle(element);
-      var canScrollVertically = /(auto|scroll|overlay)/.test(style.overflowY) &&
-        element.scrollHeight > element.clientHeight;
-
-      if (canScrollVertically) {
-        var canScrollDown = element.scrollTop + element.clientHeight < element.scrollHeight;
-        var canScrollUp = element.scrollTop > 0;
-        if ((deltaY > 0 && canScrollDown) || (deltaY < 0 && canScrollUp)) return true;
-      }
-      element = element.parentElement;
-    }
-    return false;
-  }
-
-  function smoothWheelScroll(event) {
-    var target = event.target.nodeType === 1 ? event.target : event.target.parentElement;
-    if (reducedMotion.matches || event.ctrlKey || event.deltaY === 0 ||
-        (target && target.closest("input, textarea, select, [contenteditable='true']")) ||
-        hasScrollableParent(target, event.deltaY)) return;
-
-    var delta = event.deltaY;
-    if (event.deltaMode === 1) delta *= 16;
-    else if (event.deltaMode === 2) delta *= window.innerHeight;
-    delta *= 1.6;
-
-    var doc = document.documentElement;
-    var maxScroll = Math.max(doc.scrollHeight, document.body.scrollHeight) - window.innerHeight;
-    var currentTarget = wheelFrame === null ? window.scrollY : wheelTarget;
-    var nextTarget = Math.max(0, Math.min(maxScroll, currentTarget + delta));
-    if (nextTarget === currentTarget) return;
-
-    event.preventDefault();
-    wheelTarget = nextTarget;
-
-    if (wheelFrame === null) {
-      function animateWheelScroll() {
-        var distance = wheelTarget - window.scrollY;
-        if (Math.abs(distance) < 1.5) {
-          window.scrollTo({ top: wheelTarget, behavior: "instant" });
-          wheelFrame = null;
-          return;
-        }
-
-        window.scrollTo({ top: window.scrollY + distance * 0.45, behavior: "instant" });
-        wheelFrame = window.requestAnimationFrame(animateWheelScroll);
-      }
-      wheelFrame = window.requestAnimationFrame(animateWheelScroll);
-    }
-  }
-
-  document.addEventListener("wheel", smoothWheelScroll, { passive: false });
-
   if (navToggle && header) {
     navToggle.addEventListener("click", function () {
       header.classList.toggle("open");
@@ -117,8 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       else backToTop.classList.remove("show");
     });
     backToTop.addEventListener("click", function () {
-      var behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
-      window.scrollTo({ top: 0, behavior: behavior });
+      window.scrollTo(0, 0);
     });
   }
 
